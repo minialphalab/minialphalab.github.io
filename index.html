@@ -1,63 +1,39 @@
-<!DOCTYPE html><html><head>
-	<title></title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
-	
-    <link type="text/css" href="https://app-rsrc.getbee.io/public/resources/preview/OverlayScrollbars.css" rel="stylesheet">
-    <script type="text/javascript" src="https://app-rsrc.getbee.io/public/resources/preview/OverlayScrollbars.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        OverlayScrollbars(document.querySelectorAll("body"), { });
-      });
-      function scrollElementIntoView(elementId){
-        var element = document.getElementById(elementId);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
-        }
-      }
-    </script>
-  <style>
+<!DOCTYPE html>
+<html lang="">
 
+<head>
+	<title></title>
+	<meta content="summary_large_image" name="twitter:card" />
+	<meta content="website" property="og:type" />
+	<meta content="" property="og:description" />
+	<meta content="https://x8jw3mtwy0.preview-beefreedesign.com/8j5K" property="og:url" />
+	<meta content="https://pro-bee-beepro-thumbnail.getbee.io/messages/1202026/1187958/2173448/11116424_large.jpg" property="og:image" />
+	<meta content="" property="og:title" />
+	<meta content="" name="description" />
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css" />
+	<style>
 		.bee-row,
 		.bee-row-content {
 			position: relative
 		}
 
-		.bee-row-12,
-		.bee-row-12 .bee-row-content {
-			background-color: #ffffff;
-			background-repeat: no-repeat
-		}
-
-		.bee-menu .bee-hamburger-controls span,
-		.bee-page-container,
-		.bee-row-1,
-		.bee-row-10,
-		.bee-row-11,
-		.bee-row-12,
-		.bee-row-12 .bee-row-content,
-		.bee-row-2,
-		.bee-row-3,
-		.bee-row-4,
-		.bee-row-5,
-		.bee-row-6,
-		.bee-row-7,
-		.bee-row-8,
-		.bee-row-9 {
-			background-repeat: no-repeat
+		.bee-row-20 .bee-row-content,
+		body {
+			color: #000000
 		}
 
 		body {
-			background-color: #111111;
-			color: #000000;
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif
+			background-color: #1d1b1e;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif
 		}
 
 		.bee-page-container {
 			background-image: none;
 			background-position: top left;
-			background-size: auto
+			background-size: auto;
+			background-repeat: no-repeat
 		}
 
 		a {
@@ -73,7 +49,7 @@
 			margin: 0
 		}
 
-		.bee-menu .bee-hamburger-trigger {
+		.bee-desktop_hide {
 			display: none
 		}
 
@@ -83,12 +59,16 @@
 			display: flex
 		}
 
+		.bee-row-content .bee-col-w1 {
+			flex-basis: 8%
+		}
+
 		.bee-row-content .bee-col-w2 {
 			flex-basis: 17%
 		}
 
-		.bee-row-content .bee-col-w4 {
-			flex-basis: 33%
+		.bee-row-content .bee-col-w3 {
+			flex-basis: 25%
 		}
 
 		.bee-row-content .bee-col-w6 {
@@ -99,12 +79,19 @@
 			flex-basis: 67%
 		}
 
+		.bee-row-content .bee-col-w9 {
+			flex-basis: 75%
+		}
+
+		.bee-row-content .bee-col-w10 {
+			flex-basis: 83%
+		}
+
 		.bee-row-content .bee-col-w12 {
 			flex-basis: 100%
 		}
 
-		.bee-icon .bee-icon-label-right a,
-		.bee-menu ul li a {
+		.bee-icon .bee-icon-label-right a {
 			text-decoration: none
 		}
 
@@ -119,18 +106,23 @@
 		}
 
 		.bee-row-10 .bee-col-1 .bee-block-1,
-		.bee-row-6 .bee-col-1 .bee-block-1,
-		.bee-row-6 .bee-col-2 .bee-block-1,
-		.bee-row-6 .bee-col-3 .bee-block-1,
-		.bee-row-8 .bee-col-1 .bee-block-1,
+		.bee-row-10 .bee-col-2 .bee-block-1,
+		.bee-row-11 .bee-col-1 .bee-block-1,
+		.bee-row-11 .bee-col-2 .bee-block-1,
+		.bee-row-12 .bee-col-1 .bee-block-1,
+		.bee-row-12 .bee-col-2 .bee-block-1,
+		.bee-row-13 .bee-col-1 .bee-block-1,
+		.bee-row-13 .bee-col-2 .bee-block-1,
+		.bee-row-18 .bee-col-1 .bee-block-1,
 		.bee-row-8 .bee-col-2 .bee-block-1,
-		.bee-row-8 .bee-col-3 .bee-block-1 {
+		.bee-row-8 .bee-col-3 .bee-block-1,
+		.bee-row-8 .bee-col-4 .bee-block-1,
+		.bee-row-8 .bee-col-5 .bee-block-1,
+		.bee-row-9 .bee-col-2 .bee-block-1,
+		.bee-row-9 .bee-col-3 .bee-block-1,
+		.bee-row-9 .bee-col-4 .bee-block-1,
+		.bee-row-9 .bee-col-5 .bee-block-1 {
 			width: 100%
-		}
-
-		.bee-menu ul {
-			margin: 0;
-			padding: 0
 		}
 
 		.bee-icon {
@@ -148,41 +140,31 @@
 			width: 100%
 		}
 
-		.bee-menu .bee-hamburger-controls {
-			cursor: pointer;
-			display: inline-block;
-			position: relative
-		}
-
-		.bee-menu .bee-hamburger-controls span {
-			display: block;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			background-size: 100%;
-			transition: .12s ease-in-out
-		}
-
-		.bee-menu ul {
-			list-style-type: none
-		}
-
-		.bee-menu ul.bee-horizontal li {
-			display: inline-block
-		}
-
 		.bee-paragraph,
 		.bee-text {
 			overflow-wrap: anywhere
 		}
 
-		.bee-social .icon img {
-			max-height: 32px
+		.bee-row-1,
+		.bee-row-18,
+		.bee-row-19,
+		.bee-row-2,
+		.bee-row-3 {
+			background-color: #191619;
+			background-repeat: no-repeat
 		}
 
 		.bee-row-1 .bee-row-content,
 		.bee-row-10 .bee-row-content,
 		.bee-row-11 .bee-row-content,
+		.bee-row-12 .bee-row-content,
+		.bee-row-13 .bee-row-content,
+		.bee-row-14 .bee-row-content,
+		.bee-row-15 .bee-row-content,
+		.bee-row-16 .bee-row-content,
+		.bee-row-17 .bee-row-content,
+		.bee-row-18 .bee-row-content,
+		.bee-row-19 .bee-row-content,
 		.bee-row-2 .bee-row-content,
 		.bee-row-3 .bee-row-content,
 		.bee-row-4 .bee-row-content,
@@ -200,93 +182,123 @@
 			width: 100%
 		}
 
-		.bee-row-2 .bee-col-3 .bee-block-1 {
-			color: #000000;
-			font-family: inherit;
-			font-size: 12px;
-			letter-spacing: 2px;
-			text-align: center
+		.bee-row-10,
+		.bee-row-11,
+		.bee-row-12,
+		.bee-row-13,
+		.bee-row-14,
+		.bee-row-15,
+		.bee-row-16,
+		.bee-row-17,
+		.bee-row-4,
+		.bee-row-7,
+		.bee-row-8,
+		.bee-row-9 {
+			background-repeat: no-repeat
 		}
 
-		.bee-row-4 .bee-col-2 .bee-block-2,
-		.bee-row-5 .bee-col-1 .bee-block-3,
-		.bee-row-7 .bee-col-1 .bee-block-3 {
-			padding-left: 10px;
-			padding-right: 10px;
-			padding-top: 10px
+		.bee-row-5,
+		.bee-row-6 {
+			background-color: #1d1b1e;
+			background-repeat: no-repeat
 		}
 
-		.bee-row-4 .bee-col-2 .bee-block-3 {
-			padding: 10px 10px 20px
+		.bee-row-20,
+		.bee-row-20 .bee-row-content {
+			background-color: #ffffff;
+			background-repeat: no-repeat
 		}
 
-		.bee-row-4 .bee-col-2 .bee-block-4 {
-			padding: 10px 20px 30px
+		.bee-row-5 .bee-col-2 .bee-block-1 {
+			padding: 10px 5px 15px
 		}
 
-		.bee-row-10 .bee-col-2 .bee-block-1,
-		.bee-row-10 .bee-col-2 .bee-block-2,
-		.bee-row-11 .bee-col-1 .bee-block-1,
-		.bee-row-2 .bee-col-3 .bee-block-1 li,
-		.bee-row-5 .bee-col-1 .bee-block-1,
-		.bee-row-6 .bee-col-1 .bee-block-2,
-		.bee-row-6 .bee-col-2 .bee-block-2,
-		.bee-row-6 .bee-col-3 .bee-block-2,
-		.bee-row-7 .bee-col-1 .bee-block-1,
-		.bee-row-8 .bee-col-1 .bee-block-2,
-		.bee-row-8 .bee-col-2 .bee-block-2,
-		.bee-row-8 .bee-col-3 .bee-block-2,
-		.bee-row-9 .bee-col-1 .bee-block-1 {
-			padding: 10px
+		.bee-row-6 .bee-col-2 .bee-block-1 {
+			padding: 30px 20px
 		}
 
-		.bee-row-5 .bee-col-1 .bee-block-4,
-		.bee-row-7 .bee-col-1 .bee-block-4 {
-			padding: 10px 10px 30px
-		}
-
+		.bee-row-10 .bee-col-1,
+		.bee-row-10 .bee-col-2,
+		.bee-row-11 .bee-col-1,
+		.bee-row-11 .bee-col-2,
 		.bee-row-12 .bee-col-1,
-		.bee-row-6 .bee-col-1,
-		.bee-row-6 .bee-col-2,
-		.bee-row-6 .bee-col-3,
-		.bee-row-8 .bee-col-1,
+		.bee-row-12 .bee-col-2,
+		.bee-row-13 .bee-col-1,
+		.bee-row-13 .bee-col-2,
+		.bee-row-15 .bee-col-1,
+		.bee-row-16 .bee-col-1,
+		.bee-row-16 .bee-col-2,
+		.bee-row-16 .bee-col-3,
+		.bee-row-17 .bee-col-1,
+		.bee-row-20 .bee-col-1,
+		.bee-row-7 .bee-col-1,
 		.bee-row-8 .bee-col-2,
-		.bee-row-8 .bee-col-3 {
+		.bee-row-8 .bee-col-3,
+		.bee-row-8 .bee-col-4,
+		.bee-row-8 .bee-col-5,
+		.bee-row-8 .bee-col-6,
+		.bee-row-9 .bee-col-1,
+		.bee-row-9 .bee-col-2,
+		.bee-row-9 .bee-col-3,
+		.bee-row-9 .bee-col-4,
+		.bee-row-9 .bee-col-5,
+		.bee-row-9 .bee-col-6 {
 			padding-bottom: 5px;
 			padding-top: 5px
 		}
 
-		.bee-row-6 .bee-col-1 .bee-block-3,
-		.bee-row-6 .bee-col-2 .bee-block-3,
-		.bee-row-6 .bee-col-3 .bee-block-3,
-		.bee-row-8 .bee-col-1 .bee-block-3,
-		.bee-row-8 .bee-col-2 .bee-block-3,
-		.bee-row-8 .bee-col-3 .bee-block-3 {
-			padding: 20px
+		.bee-row-10 .bee-col-1 .bee-block-2,
+		.bee-row-10 .bee-col-2 .bee-block-2,
+		.bee-row-11 .bee-col-1 .bee-block-2,
+		.bee-row-11 .bee-col-2 .bee-block-2,
+		.bee-row-12 .bee-col-1 .bee-block-2,
+		.bee-row-12 .bee-col-2 .bee-block-2,
+		.bee-row-13 .bee-col-1 .bee-block-2,
+		.bee-row-13 .bee-col-2 .bee-block-2,
+		.bee-row-15 .bee-col-1 .bee-block-1,
+		.bee-row-16 .bee-col-2 .bee-block-1,
+		.bee-row-18 .bee-col-2 .bee-block-1,
+		.bee-row-19 .bee-col-1 .bee-block-1,
+		.bee-row-7 .bee-col-1 .bee-block-1,
+		.bee-row-8 .bee-col-2 .bee-block-2,
+		.bee-row-8 .bee-col-3 .bee-block-2,
+		.bee-row-8 .bee-col-4 .bee-block-2,
+		.bee-row-8 .bee-col-5 .bee-block-2,
+		.bee-row-9 .bee-col-2 .bee-block-2,
+		.bee-row-9 .bee-col-3 .bee-block-2,
+		.bee-row-9 .bee-col-4 .bee-block-2,
+		.bee-row-9 .bee-col-5 .bee-block-2 {
+			padding: 10px
 		}
 
-		.bee-row-10 .bee-col-1 {
-			padding: 30px 20px 10px
+		.bee-row-8 .bee-col-1 {
+			padding: 5px
 		}
 
-		.bee-row-10 .bee-col-1 .bee-block-2 {
-			padding: 10px;
-			text-align: center
+		.bee-row-16 .bee-col-2 .bee-block-2 {
+			padding-bottom: 10px;
+			padding-top: 10px
 		}
 
-		.bee-row-10 .bee-col-2 {
-			padding: 30px 10px
+		.bee-row-18 .bee-col-1 {
+			padding: 10px 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
 		}
 
-		.bee-row-11 .bee-col-1 {
+		.bee-row-18 .bee-col-2 {
+			padding: 30px 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-19 .bee-col-1 {
 			padding-bottom: 15px
 		}
 
-		.bee-row-12 .bee-row-content {
-			color: #000000
-		}
-
-		.bee-row-12 .bee-col-1 .bee-block-1 {
+		.bee-row-20 .bee-col-1 .bee-block-1 {
 			color: #1e0e4b;
 			font-family: Inter, sans-serif;
 			font-size: 15px;
@@ -295,165 +307,104 @@
 			text-align: center
 		}
 
-		.bee-row-4 .bee-col-2 .bee-block-3,
-		.bee-row-5 .bee-col-1 .bee-block-4,
-		.bee-row-7 .bee-col-1 .bee-block-4 {
+		.bee-row-6 .bee-col-2 .bee-block-1 {
 			color: #fafafa;
-			font-size: 30px;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-10 .bee-col-2 .bee-block-1 a,
-		.bee-row-4 .bee-col-2 .bee-block-2 a,
-		.bee-row-4 .bee-col-2 .bee-block-3 a,
-		.bee-row-4 .bee-col-2 .bee-block-4 a,
-		.bee-row-5 .bee-col-1 .bee-block-3 a,
-		.bee-row-5 .bee-col-1 .bee-block-4 a,
-		.bee-row-7 .bee-col-1 .bee-block-3 a,
-		.bee-row-7 .bee-col-1 .bee-block-4 a {
-			color: #8a3b8f
-		}
-
-		.bee-row-10 .bee-col-2 .bee-block-1 p:not(:last-child),
-		.bee-row-10 .bee-col-2 .bee-block-2 p:not(:last-child),
-		.bee-row-11 .bee-col-1 .bee-block-1 p:not(:last-child),
-		.bee-row-11 .bee-col-1 .bee-block-2 p:not(:last-child),
-		.bee-row-4 .bee-col-2 .bee-block-2 p:not(:last-child),
-		.bee-row-4 .bee-col-2 .bee-block-3 p:not(:last-child),
-		.bee-row-4 .bee-col-2 .bee-block-4 p:not(:last-child),
-		.bee-row-5 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-5 .bee-col-1 .bee-block-4 p:not(:last-child),
-		.bee-row-7 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-7 .bee-col-1 .bee-block-4 p:not(:last-child) {
-			margin-bottom: undefined
-		}
-
-		.bee-row-4 .bee-col-2 .bee-block-2,
-		.bee-row-5 .bee-col-1 .bee-block-3,
-		.bee-row-7 .bee-col-1 .bee-block-3 {
-			color: #e91e25;
-			font-size: 12px;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-2 .bee-col-3 .bee-block-1 li a {
-			color: #ffffff
-		}
-
-		@media (max-width:768px) {
-			.bee-menu ul.with-bee-hamburger {
-				display: none;
-				padding: 5px 0;
-				position: relative;
-				top: -4px
-			}
-
-			.bee-menu ul.with-bee-hamburger li {
-				display: block;
-				text-align: center
-			}
-
-			.bee-menu ul.with-bee-hamburger li a {
-				text-decoration: none
-			}
-
-			.bee-menu ul.with-bee-hamburger span {
-				display: none
-			}
-
-			#bee-hamburger-memu-r1c2m0:checked~ul,
-			.bee-row-content:not(.no_stack) {
-				display: block
-			}
-
-			.bee-row-2 .bee-col-3 .bee-block-1 .bee-hamburger-controls {
-				width: 36px;
-				height: 36px;
-				background-color: #ea8422;
-				border-radius: 0
-			}
-
-			.bee-row-2 .bee-col-3 .bee-block-1 .bee-hamburger-controls span {
-				width: 18px;
-				height: 18px
-			}
-
-			.bee-row-2 .bee-col-3 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-open {
-				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgd2lkdGg9IjY0IiB5PSI1MiIvPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB3aWR0aD0iNjQiIHk9IjI2Ii8+PC9nPjwvc3ZnPg==");
-				transform: translate(-50%, -50%) scaleY(1)
-			}
-
-			.bee-row-2 .bee-col-3 .bee-block-1 .bee-hamburger-controls span.bee-hamburger-close {
-				background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjZmZmZmZmIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxyZWN0IGhlaWdodD0iMTIiIHJ4PSI2IiB0cmFuc2Zvcm09Im1hdHJpeCgtLjcwNzEwNjc4IC0uNzA3MTA2NzggLjcwNzEwNjc4IC0uNzA3MTA2NzggMzEuOTkxMzc4IDc3LjIzNDAxOSkiIHdpZHRoPSI4MiIgeD0iLTkuMDA4NjIyIiB5PSIyNS45OTEzNzgiLz48cmVjdCBoZWlnaHQ9IjEyIiByeD0iNiIgdHJhbnNmb3JtPSJtYXRyaXgoLS43MDcxMDY3OCAuNzA3MTA2NzggLS43MDcxMDY3OCAtLjcwNzEwNjc4IDc3LjgxOTgwNiAzMi4yMzQwMTkpIiB3aWR0aD0iODIiIHg9Ii04Ljc2NTk4MSIgeT0iMjYuMjM0MDE5Ii8+PC9nPjwvc3ZnPg==");
-				transform: translate(-50%, -50%) scaleY(0)
-			}
-
-			.bee-row-2 .bee-col-3 .bee-block-1 ul.with-bee-hamburger {
-				background-color: #ea8422
-			}
-
-			.bee-row-2 .bee-col-3 .bee-block-1 ul.with-bee-hamburger li,
-			.bee-row-2 .bee-col-3 .bee-block-1 ul.with-bee-hamburger li a {
-				color: #ffffff
-			}
-
-			#bee-hamburger-memu-r1c2m0:checked~.bee-hamburger-controls .bee-hamburger-open {
-				transform: translate(-50%, -50%) scaleY(0)
-			}
-
-			#bee-hamburger-memu-r1c2m0:checked~.bee-hamburger-controls .bee-hamburger-close {
-				transform: translate(-50%, -50%) scaleY(1)
-			}
-		}
-
-		.bee-row-4 .bee-col-2 .bee-block-4 {
-			color: #fafafa;
-			font-size: 16px;
+			font-size: 23px;
+			font-weight: 400;
 			line-height: 150%;
 			text-align: center
 		}
 
-		.bee-row-10 .bee-col-2 .bee-block-1 {
-			color: #fafafa;
-			font-size: 14px;
+		.bee-row-5 .bee-col-2 .bee-block-1 a,
+		.bee-row-6 .bee-col-2 .bee-block-1 a {
+			color: #8a3b8f
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-1 p:not(:last-child),
+		.bee-row-19 .bee-col-1 .bee-block-1 p:not(:last-child),
+		.bee-row-5 .bee-col-2 .bee-block-1 p:not(:last-child),
+		.bee-row-6 .bee-col-2 .bee-block-1 p:not(:last-child) {
+			margin-bottom: undefined
+		}
+
+		.bee-row-5 .bee-col-2 .bee-block-1 {
+			color: #e91e25;
+			font-size: 42px;
+			font-weight: 700;
 			line-height: 120%;
 			text-align: center
 		}
 
-		.bee-row-10 .bee-col-2 .bee-block-2,
-		.bee-row-11 .bee-col-1 .bee-block-1,
-		.bee-row-11 .bee-col-1 .bee-block-2 {
+		.bee-row-19 .bee-col-1 .bee-block-1 {
 			color: #fafafa;
 			font-size: 12px;
 			line-height: 120%;
 			text-align: center
 		}
 
-		.bee-row-11 .bee-col-1 .bee-block-1 a,
-		.bee-row-11 .bee-col-1 .bee-block-2 a {
+		.bee-row-19 .bee-col-1 .bee-block-1 a {
 			color: #fafafa
 		}
 
-		.bee-row-10 .bee-col-2 .bee-block-2 a {
+		.bee-row-18 .bee-col-2 .bee-block-1 {
+			color: #fafafa;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 150%;
+			text-align: center
+		}
+
+		.bee-row-18 .bee-col-2 .bee-block-1 a {
 			color: transparent
 		}
 
-		.bee-row-11 .bee-col-1 .bee-block-2 {
-			padding-left: 10px;
-			padding-right: 10px
+		@media (max-width:768px) {
+			.bee-desktop_hide {
+				display: block !important
+			}
+
+			.bee-mobile_hide {
+				display: none
+			}
+
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+
+			.bee-row-18 .bee-col-1 {
+				padding: 20px 20px 0 !important
+			}
+
+			.bee-row-4 .bee-col-1 .bee-block-1 {
+				height: 20px !important
+			}
+
+			.bee-row-6 .bee-col-2 .bee-block-1 {
+				font-size: 19px !important
+			}
+
+			.bee-row-5 .bee-col-2 .bee-block-1 {
+				font-size: 37px !important
+			}
+
+			.bee-row-18 .bee-col-2 .bee-block-1 {
+				padding: 0 !important
+			}
+
+			.bee-row-16 .bee-col-2 .bee-block-2 {
+				padding: 0 25px !important
+			}
 		}
 
-		.bee-row-12 .bee-col-1 .bee-block-1 .bee-icon-image {
+		.bee-row-20 .bee-col-1 .bee-block-1 .bee-icon-image {
 			padding: 5px 6px 5px 5px
 		}
 
-		.bee-row-12 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+		.bee-row-20 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
 			margin-left: 0
 		}
 
-		.bee-row-12 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+		.bee-row-20 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
 			margin-right: 0
 		}
 	</style>
@@ -472,22 +423,12 @@
 		</div>
 		<div class="bee-row bee-row-2">
 			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-autowidth" src="https://raw.githubusercontent.com/crackoner/minialphalab.github.io/main/minialphalogo.png?token=GHSAT0AAAAAACRS2KEM55IWXNRFKB6MWISCZRO53MA" style="max-width:160px;" alt="Logo Light"></div>
+				<div class="bee-col bee-col-1 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-image"><img alt="Logo Light" class="bee-center bee-fixedwidth" src="https://raw.githubusercontent.com/crackoner/minialphalab.github.io/main/minialphalogo.png?token=GHSAT0AAAAAACRS2KEM55IWXNRFKB6MWISCZRO53MA" style="max-width:270px;" /></div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w8">
+				<div class="bee-col bee-col-2 bee-col-w9">
 					<div class="bee-block bee-block-1 bee-divider">
 						<div class="spacer" style="height:1px;"></div>
-					</div>
-				</div>
-				<div class="bee-col bee-col-3 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-menu">
-						<nav class="bee-menu"><input class="bee-hamburger-trigger" type="checkbox" id="bee-hamburger-memu-r1c2m0"><label class="bee-hamburger-controls" for="bee-hamburger-memu-r1c2m0"><span class="bee-hamburger-open"></span><span class="bee-hamburger-close"></span></label>
-							<ul class="bee-horizontal with-bee-hamburger">
-								<li><a href="http://www.example.com" target="_blank" title="">ABOUT</a></li><span>|</span>
-								<li><a href="http://www.example.com" target="_blank" title="">CONTACT</a></li>
-							</ul>
-						</nav>
 					</div>
 				</div>
 			</div>
@@ -496,12 +437,40 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
+						<div class="spacer" style="height:40px;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="bee-row bee-row-4">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:50px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-5">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w1">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:1px;"></div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w10">
+					<div class="bee-block bee-block-1 bee-paragraph">
+						<p> Optimizing investment processes for Private Equity and Venture Capital firms</p>
+					</div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w1">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:1px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-6">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w2">
 					<div class="bee-block bee-block-1 bee-spacer">
@@ -509,83 +478,13 @@
 					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w8">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-paragraph">
-						<p style="word-break: break-word;"><span>DELIVERING YOU</span></p>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p style="word-break: break-word;"><span>THE EDGE</span></p>
-					</div>
-					<div class="bee-block bee-block-4 bee-paragraph">
-						<p style="word-break: break-word;"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis elementum sit dignissim rhoncus amet. Arcu, mollis viverra feugiat cras neque, gravida lectus. Proin sit feugiat vel porttitor. In ultrices magnis turpis senectus dolor dui habitasse.</span><br><br><span>Quisque libero, leo volutpat nec urna auctor adipiscing volutpat fermentum. Scelerisque nulla purus libero et pharetra pretium volutpat. Lacus aenean odio consectetur quis. Pellentesque egestas dictum ligula ullaorper urna bibendum matti consequat.</span></p>
+					<div class="bee-block bee-block-1 bee-paragraph">
+						<p style="word-break: break-word;">A specialized consultancy and technology firm providing a unique combination of data science, analytics, and software engineering expertise empowering you to make data-driven decisions,<span style="font-family: inherit; background-color: transparent;"> automate workflows, and increase alpha per hour</span></p>
 					</div>
 				</div>
 				<div class="bee-col bee-col-3 bee-col-w2">
 					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:1px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-5">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-divider">
-						<div class="center bee-separator" style="border-top:1px solid #e91e25;width:30%;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p style="word-break: break-word;"><span>ABOUT OUR</span></p>
-					</div>
-					<div class="bee-block bee-block-4 bee-paragraph">
-						<p style="word-break: break-word;"><span>GUIDING PRINCIPALS</span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-6">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-autowidth" src="https://app-rsrc.getbee.io/public/resources/defaultrows/1.png" style="max-width:125px;" alt="I'm an image"></div>
-					<div class="bee-block bee-block-2 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;" class="bee-text-content">
-							<p style="font-size: 16px; line-height: 19px; text-align: center;"><span style="color: #b31f1f; line-height: 14px;"><em style=""><strong style="">TRUTH</strong></em></span></p>
-						</div>
-					</div>
-					<div class="bee-block bee-block-3 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #fafafa;" class="bee-text-content">
-							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #ffffff; line-height: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis elementum sit dignissim rhoncus amet. Arcu, mollis viverra feugiat cras neque, gravida lectus. Proin sit feugiat vel porttitor. In ultrices magnis turpis senectus dolor dui habitasse.</span></p>
-						</div>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-autowidth" src="https://app-rsrc.getbee.io/public/resources/defaultrows/2.png" style="max-width:125px;" alt="I'm an image"></div>
-					<div class="bee-block bee-block-2 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;" class="bee-text-content">
-							<p style="font-size: 16px; line-height: 19px; text-align: center;"><span style="color: #b31f1f; line-height: 14px;"><em style=""><strong style="">JUSTICE</strong></em></span></p>
-						</div>
-					</div>
-					<div class="bee-block bee-block-3 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #fafafa;" class="bee-text-content">
-							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #ffffff; line-height: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis elementum sit dignissim rhoncus amet. Arcu, mollis viverra feugiat cras neque, gravida lectus. Proin sit feugiat vel porttitor. In ultrices magnis turpis senectus dolor dui habitasse.</span></p>
-						</div>
-					</div>
-				</div>
-				<div class="bee-col bee-col-3 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-autowidth" src="https://app-rsrc.getbee.io/public/resources/defaultrows/5.png" style="max-width:125px;" alt="I'm an image"></div>
-					<div class="bee-block bee-block-2 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;" class="bee-text-content">
-							<p style="font-size: 16px; line-height: 19px; text-align: center;"><span style="color: #b31f1f; line-height: 14px;"><em style=""><strong style="">PURSUIT OF HAPPINESS</strong></em></span></p>
-						</div>
-					</div>
-					<div class="bee-block bee-block-3 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #fafafa;" class="bee-text-content">
-							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #ffffff; line-height: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis elementum sit dignissim rhoncus amet. Arcu, mollis viverra feugiat cras neque, gravida lectus. Proin sit feugiat vel porttitor. In ultrices magnis turpis senectus dolor dui habitasse.</span></p>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -597,105 +496,276 @@
 						<div class="center bee-separator" style="border-top:1px solid #e91e25;width:30%;"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-spacer">
+						<div class="spacer" style="height:50px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-8 bee-mobile_hide">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-spacer">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p style="word-break: break-word;"><span>ABOUT OUR</span></p>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><img alt="BI" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/wo5/txd/uxf/output-onlinepngtools%20%288%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">BI </span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Modeling</span></p>
+						</div>
 					</div>
-					<div class="bee-block bee-block-4 bee-paragraph">
-						<p style="word-break: break-word;"><span>PROCESS</span></p>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><img alt="CRM" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/kg5/a7z/34x/output-onlinepngtools%20%284%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">CRM Enhancements</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-4 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><img alt="Notify" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/nap/v0m/vox/output-onlinepngtools.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Notification Systems</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-5 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><img alt="API" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/ew0/pd5/pla/output-onlinepngtools%20%285%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">API </span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Automation</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-6 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-8">
+		<div class="bee-row bee-row-9 bee-mobile_hide">
 			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-autowidth" src="https://app-rsrc.getbee.io/public/resources/defaultrows/5.png" style="max-width:125px;" alt="I'm an image"></div>
-					<div class="bee-block bee-block-2 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;" class="bee-text-content">
-							<p style="font-size: 16px; line-height: 19px; text-align: center;"><span style="color: #b31f1f; line-height: 14px;"><em style=""><strong style="">CONSULT</strong></em></span></p>
-						</div>
+				<div class="bee-col bee-col-1 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
 					</div>
-					<div class="bee-block bee-block-3 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #fafafa;" class="bee-text-content">
-							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="line-height: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis elementum sit dignissim rhoncus amet. Arcu, mollis viverra feugiat cras neque, gravida lectus. Proin sit feugiat vel porttitor. In ultrices magnis turpis senectus dolor dui habitasse.</span></p>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><img alt="Scraping" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/6pw/xao/22f/output-onlinepngtools%20%287%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Data </span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Scraping</span></p>
 						</div>
 					</div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-autowidth" src="https://app-rsrc.getbee.io/public/resources/defaultrows/1.png" style="max-width:125px;" alt="I'm an image"></div>
+				<div class="bee-col bee-col-3 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><img alt="Extension" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/z5l/185/m76/output-onlinepngtools%20%283%29.png" style="max-width:60px;" /></div>
 					<div class="bee-block bee-block-2 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;" class="bee-text-content">
-							<p style="font-size: 16px; line-height: 19px; text-align: center;"><span style="color: #b31f1f; line-height: 14px;"><em style=""><strong style="">ADVISE</strong></em></span></p>
-						</div>
-					</div>
-					<div class="bee-block bee-block-3 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #fafafa;" class="bee-text-content">
-							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="line-height: 14px;">Lorem ipsum dolor</span><span style="line-height: 14px;"> sit </span><span style="line-height: 14px;">amet, consectetur adipiscing elit. Quis elementum sit dignissim rhoncus amet. Arcu, mollis viverra feugiat cras neque, gravida lectus. Proin sit feugiat vel porttitor. In ultrices magnis turpis senectus dolor dui habitasse.</span></p>
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Web </span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Extensions</span></p>
 						</div>
 					</div>
 				</div>
-				<div class="bee-col bee-col-3 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-autowidth" src="https://app-rsrc.getbee.io/public/resources/defaultrows/2.png" style="max-width:125px;" alt="I'm an image"></div>
+				<div class="bee-col bee-col-4 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><img alt="Data" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/q1s/xe4/tlk/output-onlinepngtools%20%281%29.png" style="max-width:60px;" /></div>
 					<div class="bee-block bee-block-2 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;" class="bee-text-content">
-							<p style="font-size: 16px; line-height: 19px; text-align: center;"><span style="color: #b31f1f; line-height: 14px;"><em style=""><strong style="">BUILD</strong></em></span></p>
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Data </span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Management</span></p>
 						</div>
 					</div>
-					<div class="bee-block bee-block-3 bee-text">
-						<div style="line-height: 120%; font-size: 12px; font-family: inherit; color: #fafafa;" class="bee-text-content">
-							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="line-height: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis elementum sit dignissim rhoncus amet. Arcu, mollis viverra feugiat cras neque, gravida lectus. Proin sit feugiat vel porttitor. In ultrices magnis turpis senectus dolor dui habitasse.</span></p>
+				</div>
+				<div class="bee-col bee-col-5 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><img alt="Outreach" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/hmi/5nn/kto/output-onlinepngtools%20%282%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Automated Outreach</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-6 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-10 bee-desktop_hide">
+			<div class="bee-row-content no_stack">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="I'm an image" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/wo5/txd/uxf/output-onlinepngtools%20%288%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">BI</span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Modeling</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="I'm an image" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/kg5/a7z/34x/output-onlinepngtools%20%284%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">CRM</span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Enhancements</span></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-9">
+		<div class="bee-row bee-row-11 bee-desktop_hide">
+			<div class="bee-row-content no_stack">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="I'm an image" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/nap/v0m/vox/output-onlinepngtools.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Notification</span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Systems</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="I'm an image" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/ew0/pd5/pla/output-onlinepngtools%20%285%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">API</span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Automation</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-12 bee-desktop_hide">
+			<div class="bee-row-content no_stack">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="I'm an image" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/q1s/xe4/tlk/output-onlinepngtools%20%281%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Data</span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Management</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="I'm an image" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/hmi/5nn/kto/output-onlinepngtools%20%282%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Automated</span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Outreach</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-13 bee-desktop_hide">
+			<div class="bee-row-content no_stack">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="I'm an image" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/6pw/xao/22f/output-onlinepngtools%20%287%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Data </span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Scraping</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="I'm an image" class="bee-center bee-fixedwidth" src="https://8c26adde7c.imgdist.com/pub/bfra/mx294x8q/z5l/185/m76/output-onlinepngtools%20%283%29.png" style="max-width:60px;" /></div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #555555;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Web</span></p>
+							<p style="font-size: 14px; line-height: 16px; text-align: center;"><span style="color: #e91e25; font-size: 18px; line-height: 21px;">Extensions</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-14">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
+						<div class="spacer" style="height:40px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-15">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-divider">
 						<div class="center bee-separator" style="border-top:1px solid #e91e25;width:30%;"></div>
 					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
+					<div class="bee-block bee-block-2 bee-spacer bee-mobile_hide">
+						<div class="spacer" style="height:40px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-16">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-text">
+						<div class="bee-text-content" style="font-size: 12px; line-height: 120%; font-family: inherit; color: #e91e25;">
+							<p style="font-size: 12px; line-height: 14px; text-align: center;"><span style="font-size: 28px; line-height: 33px;">About Us</span></p>
+						</div>
+					</div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="font-size: 12px; line-height: 120%; font-family: inherit; color: #ffffff;">
+							<p style="font-size: 15px; line-height: 18px; text-align: center;">Our team has 10+ years of experience in the financial space and 30+ years in software development. We've seen the trend in the financial sector where PE and VC firms want to do more with data, automation, and technology but do not have the skillsets on hand. We advise, build, and help our clients win more with less!</p>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
 						<div class="spacer" style="height:60px;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-10">
+		<div class="bee-row bee-row-17">
 			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><img class="bee-center bee-fixedwidth" src="https://raw.githubusercontent.com/crackoner/minialphalab.github.io/main/minialphalogo.png?token=GHSAT0AAAAAACRS2KEM55IWXNRFKB6MWISCZRO53MA" style="max-width:212px;" alt="PFW Logo"></div>
-					<div class="bee-block bee-block-2 bee-social">
-						<div class="content"><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.facebook.com" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/facebook@2x.png" alt="Facebook" title="facebook"></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.twitter.com" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/twitter@2x.png" alt="Twitter" title="twitter"></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.instagram.com" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/instagram@2x.png" alt="Instagram" title="instagram"></a></span></div>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-paragraph">
-						<p style="word-break: break-word;"><span><strong><span>Contact Us</span></strong></span></p>
-					</div>
-					<div class="bee-block bee-block-2 bee-paragraph">
-						<p style="word-break: break-word;"><span>Your Street 12, 34567 AB City</span></p>
-						<p style="word-break: break-word;"><span>info@example.com </span></p>
-						<p style="word-break: break-word;"><span>(+1) 123 456 789</span></p>
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide">
+						<div class="spacer" style="height:60px;"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-11">
+		<div class="bee-row bee-row-18">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><img alt="PFW Logo" class="bee-center bee-fixedwidth" src="https://raw.githubusercontent.com/crackoner/minialphalab.github.io/main/minialphalogo.png?token=GHSAT0AAAAAACRS2KEM55IWXNRFKB6MWISCZRO53MA" style="max-width:280px;" /></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-paragraph">
+						<p style="word-break: break-word;"><span>nick@minialphalab.com </span></p>
+						<p style="word-break: break-word;"><span>(360) 907-1624</span></p>
+						<p style="word-break: break-word;"><span>San Francisco, CA</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-19">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-paragraph">
 						<p style="word-break: break-word;"><span>2024 © All Rights Reserved</span></p>
 					</div>
-					<div class="bee-block bee-block-2 bee-paragraph">
-						<p style="word-break:break-word;"><span><a href="http://www.example.com" target="_blank" rel="noopener">Unsubscribe</a> | <a href="http://www.example.com" target="_blank" rel="noopener">Manage Preferences</a></span></p>
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-<script type="text/javascript" src="https://app-rsrc.getbee.io/public/resources/preview/dark-mode/dark-mode.min.js"></script>
+</body>
 
-</body></html>
+</html>
